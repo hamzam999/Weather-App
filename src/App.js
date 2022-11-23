@@ -10,7 +10,7 @@ function App() {
   const fetchWeather = async (e) => {
     e.preventDefault();
     const response = await Axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=30c0d1389d26da8012eae5cb1cc74ccc`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=c1b87bd5feeaf907dc3194f32e90102c`,
     );
     updateWeather(response.data);
   };
